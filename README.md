@@ -1,7 +1,4 @@
-# MikaKernel Builder
-
-Meow!
-
+# Android Kernel Builder
 
 ## Usage:
 
