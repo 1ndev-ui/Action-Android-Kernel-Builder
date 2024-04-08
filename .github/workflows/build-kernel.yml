@@ -23,8 +23,7 @@ jobs:
         run: |
           git clone --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 aarch64-linux-android-4.9
           git clone --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9 arm-linux-androideabi-4.9
-          mkdir clang
-          curl https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/llvm-r383902b/clang-r383902.tar.gz -RLO && tar -C clang/ -xf clang-*.tar.gz
+          git clone --depth=1 https://github.com/1ndev-ui/android_prebuilts_clang_host_linux-x86_clang-6443078 clang
 
       - name: Pull kernel source
         run: |
